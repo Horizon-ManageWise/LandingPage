@@ -147,15 +147,48 @@
       flex-direction: column; 
     }
     
+    #DescripcionGeneral .contenedorDescripcion {
+      flex-direction: column;
+    }
+    
+    #DescripcionGeneral .contenedorDescripcion:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    #DescripcionGeneral .contenedorDescripcion:nth-child(even) {
+        flex-direction: column;
+    }
+
+    #Beneficios {
+        flex-direction: column;
+    }
+
     #banner #eslogan {
       text-align: center; 
     }
     
+    #DescripcionGeneral .contenedorDescripcion {
+        text-align: center; 
+    }
+
+    #Beneficios .contenedorBeneficios {
+        text-align: center; 
+    }
 
     #banner img {
       width: 80%;
     }
+    #Beneficios img{
+        width: 20%;
+    }
+    
+    #DescripcionGeneral img{
+        width: 80%;
+    }
 
+    .puntos{
+        width: 80%;
+    }
   }
   
   @media (max-width: 480px) {
@@ -167,8 +200,82 @@
       width: 100%; 
     }
 
-  }
+    #Beneficios img{
+        width: 20%;
+    }
+    
+    #DescripcionGeneral img{
+        width: 100%;
+    }
 
+    .puntos{
+        width: 250px;
+    }
+  }
+  /*FIN US45*/
+
+
+  #DescripcionGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secundario);
+    padding: 5rem 2rem;
+}
+
+.contenedorDescripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem 2rem;
+}
+
+.contenedorDescripcion img {
+    width: 40%;
+    max-width: 500px;
+    height: auto;
+}
+
+.contenedorDescripcion .puntos {
+    width: 70%;
+    max-width: 600px;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.puntos{
+    color: white;
+    width: 30rem;
+}
+
+
+/*Beneficios*/
+#Beneficios {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; 
+  padding: 2rem;
+  background-color: lightgray;
+  flex-wrap: wrap; 
+}
+
+.contenedorBeneficios {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start; 
+  flex: 1;
+  margin: 1rem;
+  text-align: center;
+}
+
+.contenedorBeneficios img {
+  margin-bottom: 1rem; 
+  width: 100px; 
+  box-shadow: none;
+}
 
 /*botones*/
 button{
@@ -182,4 +289,8 @@ button{
 
 img{
     border-radius: 5px;
+}
+
+#Beneficios .contenedorBeneficios h3{
+  margin-bottom: 1rem; 
 }
