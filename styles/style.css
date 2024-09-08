@@ -212,7 +212,6 @@
         width: 250px;
     }
   }
-  /*FIN US45*/
 
 
   #DescripcionGeneral {
@@ -277,6 +276,26 @@
   box-shadow: none;
 }
 
+
+/*Sobre Nosotros*/
+
+#Nosotros{
+    padding: 2rem;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+#nosotrosHorizon{
+    padding: 1rem;
+}
+
+
+/*lanzar*/
+#lanzar{
+    height: 15rem;
+    text-align: center;
+}
+
 /*botones*/
 button{
     background-color:  var(--principal);
@@ -287,8 +306,20 @@ button{
     color: white;
 }
 
+#registro{
+    background-color: var(--secundario);
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+}
+
 img{
     border-radius: 5px;
+}
+
+hr{
+  width: 90%;
+  margin: auto;
 }
 
 #Beneficios .contenedorBeneficios h3{
