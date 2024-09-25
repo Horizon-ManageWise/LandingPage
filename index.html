@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
   <title>ManageWise</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="/styles/style.css">
   <style>
     nav a.active {
       font-weight: bold;
@@ -23,17 +23,19 @@
       <li><a href="#DescripcionGeneral" class="nav-link">Descripcion General</a></li>
       <li><a href="#Beneficios" class="nav-link">Beneficios</a></li>
       <li><a href="#Nosotros" class="nav-link">Nosotros</a></li>
-      <li><a href="inicio-sesion.html">Iniciar Sesión</a></li>
-      <li><a href="registro.html" id="registro" >Registrarse</a></li>
+      <li><a href="#Contactanos" class="nav-link">Contáctanos</a></li>
+      <li><a href="/inicio-sesion.html">Iniciar Sesión</a></li>
+      <li><a href="/registro.html" id="registro" >Registrarse</a></li>
     </ul>
-    <img src="img/ManageWise_logo.jpg">
+    <img src="/img/ManageWise_logo.jpg">
     <ul>
       <li><a href="#">ManageWise</a></li>
       <li class="hideOnMobile"><a href="#DescripcionGeneral" class="nav-link">Descripcion General</a></li>
       <li class="hideOnMobile"><a href="#Beneficios" class="nav-link">Beneficios</a></li>
       <li class="hideOnMobile"><a href="#Nosotros" class="nav-link">Nosotros</a></li>
-      <li class="hideOnMobile"><a href="inicio-sesion.html">Iniciar Sesión</a></li>
-      <li class="hideOnMobile"><a href="registro.html" id="registro">Registrarse</a></li>
+      <li class="hideOnMobile"><a href="#Contactanos" class="nav-link">Contáctanos</a></li>
+      <li class="hideOnMobile"><a href="/inicio-sesion.html">Iniciar Sesión</a></li>
+      <li class="hideOnMobile"><a href="/registro.html" id="registro">Registrarse</a></li>
       <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
   </nav>
@@ -42,38 +44,38 @@
         <div id="eslogan">
             <h1>Optimiza el desarrollo y lidera con <span class="highlight">ManageWise</span></h1><br>
             <h3>Acelera la colaboración y mantén el control total de proyectos de desarrollo de software.</h3><br>
-            <button class="probar" onclick="window.location.href='registro.html'">Registrarse</button>
+            <button class="probar" onclick="window.location.href='/registro.html'">Registrarse</button>
         </div>
-        <img src="img/banner.png" width="430px" class="imagenReferencia">
+        <img src="img/banner.png" width="500px" class="imagenReferencia">
     </section>
 </header>
 
 <!--características principales-->
 <section id="DescripcionGeneral">
     <div class="contenedorDescripcion">
-        <img src="img/descripcion1.png" width="430px" class="imagenReferencia">
+        <img src="img/descripcion1.png" width="500px" class="imagenReferencia">
         <br>
         <div class="puntos">
-            <h3>Colaboración en tiempo real desde cualquier dispositivo</h3><br>
-            <p>Designa, completa tareas, añade comentarios y sugerencias para agilizar el trabajo conectándote desde cualquier dispotivo.  </p>
+            <h3>Gestión integral de tareas</h3><br>
+            <p>Asigna, actualiza, completa o elimina tareas de manera eficiente, asegurando una distribución clara entre los miembros del equipo. Supervisa el progreso de cada tarea y facilita la colaboración entre los integrantes para cumplir con los objetivos del proyecto.</p>
             <br>
         </div>
     </div>
     <div class="contenedorDescripcion">
         <div class="puntos">
-            <h3>Gestión Avanzada de Recursos</h3><br>
-            <p>Asigna y optimiza recursos humanos y materiales basados en la carga de trabajo actual y futura, además del historial, evitando la sobrecarga y el desperdicio.</p>
+            <h3>Administración de miembros del equipo</h3><br>
+            <p>Monitorea de forma detallada a cada miembro del equipo, visualizando su rol, dirección de correo electrónico, ID, nombre y otros datos relevantes. Además, sigue de cerca su participación y progreso dentro del proyecto, garantizando que cada uno esté alineado con las metas establecidas.</p>
             <br>
         </div>
-        <img src="img/descripcion2.png" width="430px" class="imagenReferencia">
+        <img src="img/descripcion2.png" width="500px" class="imagenReferencia">
         <br>
     </div>
     <div class="contenedorDescripcion">
-        <img src="img/descripcion3.png" width="430px" class="imagenReferencia">
+        <img src="img/descripcion3.png" width="500px" class="imagenReferencia">
         <br>
         <div class="puntos">
-            <h3>Alertas y notificaciones inteligentes</h3><br>
-            <p>Recibe notificaciones automáticas sobre plazos inminentes, cambios en el proyecto, desvíos significativos. Además de poder crear alertas personalizadas para tí y el equipo.</p>
+            <h3>Reportes colaborativos</h3><br>
+            <p>Cada miembro del equipo tiene la capacidad de generar reportes detallados sobre el estado del proyecto, que incluyan posibles errores, sugerencias de mejoras, feedback general, y más. Esta función fomenta la colaboración y ayuda a mejorar el flujo de trabajo, permitiendo realizar ajustes oportunos que fortalezcan el desarrollo del proyecto.</p>
             <br>
         </div>
     </div>
@@ -111,12 +113,35 @@
     </div>
 </section>
 
+<section id="Contactanos">
+    <div class="contenedorContacto">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes preguntas o necesitas ayuda? ¡Estamos aquí para ti!</p>
+      <form action="/enviar-mensaje" method="POST">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="enviar">Enviar</button>
+      </form>
+    </div>
+  </section>
+  
+
 <hr><br><br>
 
 <section id="lanzar">
     <h2>¿Listo para empezar?</h2>
     <br><br>
-    <button class="probar" onclick="window.location.href='registro.html'">Registrarse</button>
+    <button class="probar" onclick="window.location.href='/registro.html'">Registrarse</button>
 </section>
 
 
@@ -126,18 +151,18 @@
     <div id="siguenos">
         <h3>Síguenos</h3>
         <a href="https://www.facebook.com" target="_blank" class="facebook-logo">
-            <img width="40px" src="img/logo_fb.png" alt="Facebook Logo">
+            <img width="40px" src="/img/logo_fb.png" alt="Facebook Logo">
         </a>
         <a href="https://www.instagram.com" target="_blank" class="instagram-logo">
-            <img width="40px" src="img/logo_ig.webp" alt="instagramLogo">
+            <img width="40px" src="/img/logo_ig.webp" alt="instagramLogo">
         </a>
         <a href="https://www.x.com" target="_blank" class="x-logo">
-            <img width="40px" src="img/logo_x.avif" alt="x Logo">
+            <img width="40px" src="/img/logo_x.avif" alt="x Logo">
         </a>
     </div>
 </footer>
 
 
-<script src="js/script.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
