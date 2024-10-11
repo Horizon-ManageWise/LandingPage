@@ -442,3 +442,32 @@ margin: auto;
 .enviar:hover {
 background-color: #2c2c2c;
 }
+.faq-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faq {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.faq h4 {
+  margin: 0;
+}
+
+.faq-answer {
+  display: none; /* Ocultar respuesta por defecto */
+  margin-top: 10px;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding: 5px;
+  background-color: #eaeaea;
+  border-radius: 4px;
+}
