@@ -43,3 +43,7 @@ function hideSidebar() {
   const sidebar = document.querySelector('.sidebar');
   sidebar.style.display = 'none';
 }
+function toggleAnswer(faq) {
+  const answer = faq.querySelector('.faq-answer');
+  answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+}

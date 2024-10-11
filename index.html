@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
   <title>ManageWise</title>
   <link rel="stylesheet" href="styles/style.css">
   <style>
@@ -23,9 +23,10 @@
       <li><a href="#DescripcionGeneral" class="nav-link">Descripcion General</a></li>
       <li><a href="#Beneficios" class="nav-link">Beneficios</a></li>
       <li><a href="#Nosotros" class="nav-link">Nosotros</a></li>
+      <li><a href="#faq-section" class="nav-link">FAQ</a></li> <!-- Enlace agregado -->
       <li><a href="#Contactanos" class="nav-link">Contáctanos</a></li>
       <li><a href="inicio-sesion.html">Iniciar Sesión</a></li>
-      <li><a href="registro.html" id="registro" >Registrarse</a></li>
+      <li><a href="registro.html" id="registro">Registrarse</a></li>
     </ul>
     <img src="img/ManageWise_logo.jpg">
     <ul>
@@ -33,6 +34,7 @@
       <li class="hideOnMobile"><a href="#DescripcionGeneral" class="nav-link">Descripcion General</a></li>
       <li class="hideOnMobile"><a href="#Beneficios" class="nav-link">Beneficios</a></li>
       <li class="hideOnMobile"><a href="#Nosotros" class="nav-link">Nosotros</a></li>
+      <li class="hideOnMobile"><a href="#faq-section" class="nav-link">FAQ</a></li> <!-- Enlace agregado -->
       <li class="hideOnMobile"><a href="#Contactanos" class="nav-link">Contáctanos</a></li>
       <li class="hideOnMobile"><a href="inicio-sesion.html">Iniciar Sesión</a></li>
       <li class="hideOnMobile"><a href="registro.html" id="registro">Registrarse</a></li>
@@ -56,15 +58,15 @@
         <img src="img/descripcion1.png" width="500px" class="imagenReferencia">
         <br>
         <div class="puntos">
-            <h3>Gestión integral de tareas</h3><br>
-            <p>Asigna, actualiza, completa o elimina tareas de manera eficiente, asegurando una distribución clara entre los miembros del equipo. Supervisa el progreso de cada tarea y facilita la colaboración entre los integrantes para cumplir con los objetivos del proyecto.</p>
+            <h3>Estadisticas de los sprints</h3><br>
+            <p>Monitorea el progreso de las historias de usuario de cada sprint de forma clara y precisa. Visualiza el porcentaje completado, identifica las historias pendientes y asegura que el equipo se mantenga alineado para alcanzar los objetivos del proyecto de manera eficiente.</p>
             <br>
         </div>
     </div>
     <div class="contenedorDescripcion">
         <div class="puntos">
-            <h3>Administración de miembros del equipo</h3><br>
-            <p>Monitorea de forma detallada a cada miembro del equipo, visualizando su rol, dirección de correo electrónico, ID, nombre y otros datos relevantes. Además, sigue de cerca su participación y progreso dentro del proyecto, garantizando que cada uno esté alineado con las metas establecidas.</p>
+            <h3>Administración de miembros del equipo y grupos</h3><br>
+            <p>Monitorea de forma detallada a cada miembro del equipo, visualizando su rol y ver lo detalles. Además, sigue de cerca su participación y progreso dentro del proyecto, garantizando que cada uno esté alineado con las metas establecidas.</p>
             <br>
         </div>
         <img src="img/descripcion2.png" width="500px" class="imagenReferencia">
@@ -74,8 +76,8 @@
         <img src="img/descripcion3.png" width="500px" class="imagenReferencia">
         <br>
         <div class="puntos">
-            <h3>Reportes colaborativos</h3><br>
-            <p>Cada miembro del equipo tiene la capacidad de generar reportes detallados sobre el estado del proyecto, que incluyan posibles errores, sugerencias de mejoras, feedback general, y más. Esta función fomenta la colaboración y ayuda a mejorar el flujo de trabajo, permitiendo realizar ajustes oportunos que fortalezcan el desarrollo del proyecto.</p>
+            <h3>Administración de Backlog</h3><br>
+            <p>Manejar cada backlog de manera interactiva y sencilla, permite a los usuarios crear, editar y organizar historias de usuario y épicos con facilidad. Esta funcionalidad asegura una planificación eficiente y un seguimiento claro de las tareas, promoviendo una colaboración efectiva dentro del equipo.</p>
             <br>
         </div>
     </div>
@@ -100,8 +102,6 @@
     </div>
 </section>
 
-
-
 <section id="Nosotros">
     <div id="nosotrosHorizon">
         <h3>Nosotros</h3><br>
@@ -112,7 +112,35 @@
         Aspiramos a ser líderes en la gestión de proyectos de software, ofreciendo soluciones que impulsen el éxito y el crecimiento sostenible de las empresas emergentes.</p>
     </div>
 </section>
-
+<section id="faq-section" class="faq-section">
+    <div class="faq-container">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq" onclick="toggleAnswer(this)">
+      <h4>¿Qué es ManageWise?</h4>
+      <div class="faq-answer">
+        <p>ManageWise es una plataforma diseñada para optimizar la gestión de proyectos en empresas de software, facilitando la colaboración y el seguimiento del progreso del equipo.</p>
+      </div>
+    </div>
+    <div class="faq" onclick="toggleAnswer(this)">
+      <h4>¿Cómo puedo registrarme?</h4>
+      <div class="faq-answer">
+        <p>Puedes registrarte haciendo clic en el botón "Registrarse" en la parte superior de la página y siguiendo las instrucciones.</p>
+      </div>
+    </div>
+    <div class="faq" onclick="toggleAnswer(this)">
+      <h4>¿Qué beneficios ofrece ManageWise?</h4>
+      <div class="faq-answer">
+        <p>ManageWise ofrece mejoras en la transparencia, la toma de decisiones y el ambiente laboral, entre otros beneficios que optimizan la gestión de proyectos.</p>
+      </div>
+    </div>
+    <div class="faq" onclick="toggleAnswer(this)">
+      <h4>¿Es facil de usar?</h4>
+      <div class="faq-answer">
+        <p>Si, ManageWise es facil de usar para cualquier usuario que quiera gestionar un proyecto usando metodo SCRUM</p>
+      </div>
+    </div>
+  </div>
+</section>
 <section id="Contactanos">
     <div class="contenedorContacto">
       <h2>Contáctanos</h2>
@@ -134,35 +162,25 @@
       </form>
     </div>
   </section>
-  
-
-<hr><br><br>
-
-<section id="lanzar">
-    <h2>¿Listo para empezar?</h2>
-    <br><br>
-    <button class="probar" onclick="window.location.href='registro.html'">Registrarse</button>
-</section>
+<br><br>
 
 
 <footer>
-    <h4>&copy; 2024 Horizon</h4>
+  <h4>&copy; 2024 Horizon</h4>
 <!--Apartado redes sociales-->
-    <div id="siguenos">
-        <h3>Síguenos</h3>
-        <a href="https://www.facebook.com" target="_blank" class="facebook-logo">
-            <img width="40px" src="img/logo_fb.png" alt="Facebook Logo">
-        </a>
-        <a href="https://www.instagram.com" target="_blank" class="instagram-logo">
-            <img width="40px" src="img/logo_ig.webp" alt="instagramLogo">
-        </a>
-        <a href="https://www.x.com" target="_blank" class="x-logo">
-            <img width="40px" src="img/logo_x.avif" alt="x Logo">
-        </a>
-    </div>
+  <div id="siguenos">
+      <h3>Síguenos</h3>
+      <a href="https://www.facebook.com" target="_blank" class="facebook-logo">
+          <img width="40px" src="img/logo_fb.png" alt="Facebook Logo">
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="instagram-logo">
+          <img width="40px" src="img/logo_ig.webp" alt="instagramLogo">
+      </a>
+      <a href="https://www.x.com" target="_blank" class="x-logo">
+          <img width="40px" src="img/logo_x.avif" alt="x Logo">
+      </a>
+  </div>
 </footer>
-
-
-<script src="/js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
