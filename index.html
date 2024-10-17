@@ -20,10 +20,10 @@
   <nav>
     <ul class="sidebar">
       <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#faq-section" class="nav-link">FAQ</a></li>
       <li><a href="#DescripcionGeneral" class="nav-link">Descripcion General</a></li>
       <li><a href="#Beneficios" class="nav-link">Beneficios</a></li>
       <li><a href="#Nosotros" class="nav-link">Nosotros</a></li>
-      <li><a href="#faq-section" class="nav-link">FAQ</a></li> 
       <li><a href="#Contactanos" class="nav-link">Contáctanos</a></li>
       <li><a href="inicio-sesion.html">Iniciar Sesión</a></li>
       <li><a href="registro.html" id="registro">Registrarse</a></li>
@@ -31,10 +31,10 @@
     <img src="img/ManageWise_logo.jpg">
     <ul>
       <li><a href="#">ManageWise</a></li>
+      <li class="hideOnMobile"><a href="#faq-section" class="nav-link">FAQ</a></li>
       <li class="hideOnMobile"><a href="#DescripcionGeneral" class="nav-link">Descripcion General</a></li>
       <li class="hideOnMobile"><a href="#Beneficios" class="nav-link">Beneficios</a></li>
       <li class="hideOnMobile"><a href="#Nosotros" class="nav-link">Nosotros</a></li>
-      <li class="hideOnMobile"><a href="#faq-section" class="nav-link">FAQ</a></li> 
       <li class="hideOnMobile"><a href="#Contactanos" class="nav-link">Contáctanos</a></li>
       <li class="hideOnMobile"><a href="inicio-sesion.html">Iniciar Sesión</a></li>
       <li class="hideOnMobile"><a href="registro.html" id="registro">Registrarse</a></li>
@@ -112,32 +112,30 @@
         Aspiramos a ser líderes en la gestión de proyectos de software, ofreciendo soluciones que impulsen el éxito y el crecimiento sostenible de las empresas emergentes.</p>
     </div>
 </section>
-<section id="faq-section" class="faq-section">
-    <div class="faq-container">
-    <h2>Preguntas Frecuentes</h2>
-    <div class="faq" onclick="toggleAnswer(this)">
-      <h4>¿Qué es ManageWise?</h4>
-      <div class="faq-answer">
-        <p>ManageWise es una plataforma diseñada para optimizar la gestión de proyectos en empresas de software, facilitando la colaboración y el seguimiento del progreso del equipo.</p>
-      </div>
+<section id="faq-section">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq" onclick="toggleAnswer(this)">
+    <h4>¿Qué es ManageWise?</h4>
+    <div class="faq-answer">
+      <p>ManageWise es una plataforma diseñada para optimizar la gestión de proyectos en empresas de software, facilitando la colaboración y el seguimiento del progreso del equipo.</p>
     </div>
-    <div class="faq" onclick="toggleAnswer(this)">
-      <h4>¿Cómo puedo registrarme?</h4>
-      <div class="faq-answer">
-        <p>Puedes registrarte haciendo clic en el botón "Registrarse" en la parte superior de la página y siguiendo las instrucciones.</p>
-      </div>
+  </div>
+  <div class="faq" onclick="toggleAnswer(this)">
+    <h4>¿Cómo puedo registrarme?</h4>
+    <div class="faq-answer">
+      <p>Puedes registrarte haciendo clic en el botón "Registrarse" en la parte superior de la página y siguiendo las instrucciones.</p>
     </div>
-    <div class="faq" onclick="toggleAnswer(this)">
-      <h4>¿Qué beneficios ofrece ManageWise?</h4>
-      <div class="faq-answer">
-        <p>ManageWise ofrece mejoras en la transparencia, la toma de decisiones y el ambiente laboral, entre otros beneficios que optimizan la gestión de proyectos.</p>
-      </div>
+  </div>
+  <div class="faq" onclick="toggleAnswer(this)">
+    <h4>¿Qué beneficios ofrece ManageWise?</h4>
+    <div class="faq-answer">
+      <p>ManageWise ofrece mejoras en la transparencia, la toma de decisiones y el ambiente laboral, entre otros beneficios que optimizan la gestión de proyectos.</p>
     </div>
-    <div class="faq" onclick="toggleAnswer(this)">
-      <h4>¿Es facil de usar?</h4>
-      <div class="faq-answer">
-        <p>Si, ManageWise es facil de usar para cualquier usuario que quiera gestionar un proyecto usando metodo SCRUM</p>
-      </div>
+  </div>
+  <div class="faq" onclick="toggleAnswer(this)">
+    <h4>¿Es facil de usar?</h4>
+    <div class="faq-answer">
+      <p>Si, ManageWise es facil de usar para cualquier usuario que quiera gestionar un proyecto usando metodo SCRUM</p>
     </div>
   </div>
 </section>
@@ -162,7 +160,8 @@
       </form>
     </div>
   </section>
-<br><br>
+
+<hr><br><br>
 
 
 <footer>
